@@ -1,0 +1,9 @@
+global using System.ComponentModel.DataAnnotations;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Backend.Domains.Models;
+global using Backend.Domains.Configurations;
+global using Backend.Services;
+global using Backend.Infrastructures;
+global using Backend.Controllers.Requests;
