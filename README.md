@@ -1,2 +1,3 @@
-Untuk frontend dapat menggunakan command `npm install && npm run dev`
-Untuk backend dapat menggunakan command `dotnet restore && dotnet build && dotnet run`
+- Untuk frontend dapat menggunakan command `npm install && npm run dev`
+- Untuk backend dapat menggunakan command `dotnet restore && dotnet build && dotnet run`
+- Untuk migrasi database dapat menggunakan command `dotnet ef database update`. Jika tidak ada dotnet ef, dapat di-download terlebih dahulu `dotnet tool install --global dotnet-ef`
