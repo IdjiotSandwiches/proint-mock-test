@@ -13,6 +13,7 @@ public class BookService(
         var totalItems = await _dbContext.Books.CountAsync();
 
         var books = await _dbContext.Books
+            .OrderByDescending(x => x.CreatedDate)
             .Skip((page - 1) * size)
             .Take(size)
             .ToListAsync();
