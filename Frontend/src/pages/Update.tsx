@@ -30,6 +30,13 @@ function Update() {
     const fetch = async () => {
       try {
         const book = await api.get(`/book/${id}`);
+
+        if (!book.data) {
+          navigate('/');
+          toast.info("Book not found!");
+          return;
+        }
+
         setBook(book.data);
       } catch (error) {
         console.log(error);
